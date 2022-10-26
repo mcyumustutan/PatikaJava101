@@ -23,7 +23,7 @@ public class TaxiMeter {
 
         traveledPrice = taxiMeterStartPrice + ( traveledKM * pricePerKm);
 
-        System.out.printf("Taksimetre Tutarı: %s\n", traveledPrice < minPrice ? 20 : traveledPrice);
+        System.out.printf("Taksimetre Tutarı: %s\n", Math.max(traveledPrice, minPrice));
 
     }
 }
